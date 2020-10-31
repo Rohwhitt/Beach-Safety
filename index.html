@@ -1,0 +1,77 @@
+<head>
+<title>Beach Saftey Game</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="main.js"></script>
+
+<!--___________BG SOUND LOOPED_________ -->
+<audio autoplay loop>
+  <source src="sounds/bg_beach.wav">
+</audio>
+
+<!--_________DROPPABLE AREAS___________-->
+<div id="boy">
+<img class="test" src="Images/boy_int.png"></div>
+<div class="deeparea"></div>
+<div class="riparea"></div>
+<div class="flagarea"></div>
+<div class="rockyarea"></div>
+<div class="sandarea"></div>
+
+<!--_____________________HELP BTN_________________________ -->
+<div href="#help-popup" class="help_btn"><h1>?</h1></div>
+
+<div id='help-popup' class="mfp-hide help zoom-anim-dialog">
+  <h1>Drag and Drop the boy into different areas of the water</h1>
+  <div class="dragdropimg"></div>
+</div>
+
+<!--_________________START QUIZ_________________________-->
+<a href='quiz.html' class="take-quiz">
+  <h1>Take Quiz</h1>
+</a>
+
+<!--__________________MAGNIFIC POPUP AREAS_____________________-->
+<div id="deep-popup" class="mfp-hide deeppopup zoom-anim-dialog">
+  <h1>Oh no!</h1>
+ <p> swimming in deep water can be dangerous. Sharks and
+    other mean creatures also swim in deep water. You can
+    also drown in deep water. So be careful! </p>
+    <div class="deepimg"></div>
+</div>
+
+<div id="rip-popup" class="mfp-hide rippopup zoom-anim-dialog">
+  <h1>Oh no!</h1>
+ <p> Rips are very dangerous as they can pull you out
+   into deep dangerous water. Its safest to swim between
+   the flags. </p>
+    <div class="ripimg"></div>
+</div>
+
+<div id="flag-popup" class="mfp-hide flagpopup zoom-anim-dialog">
+  <h1>Well Done!</h1>
+ <p> Swimming between the flags is safe because life guards
+    have made sure that area of the beach is safe. You
+    should always swim between the flags. </p>
+    <div class="flagimg"></div>
+</div>
+
+<div id="rocky-popup" class="mfp-hide rockypopup zoom-anim-dialog">
+  <h1>Oh no!</h1>
+ <p> Rocky areas in the water can be dangerous because most
+   rocks are sharp and hard an can cause serious injury.
+   Always check an area before swimming. </p>
+    <div class="rockyimg"></div>
+</div>
+
+<div id="sand-popup" class="mfp-hide sandpopup zoom-anim-dialog">
+  <h1>Well Done!</h1>
+ <p> The sand is nice and safe. Also make sure to always put
+   on sunscreen so you don't get burnt. getting sunburnt can
+   sting  </p>
+    <div class="sandimg"></div>
+</div>
