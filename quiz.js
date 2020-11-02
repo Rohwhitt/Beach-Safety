@@ -22,11 +22,18 @@ $('.submit').on('click', function(){
 
     // check answer
     if( correct == 1 ){
-
+      var correctRadio = $(this).find('input:checked');
+      var correctRadioParent = correctRadio.parent();
+      var correctRadioLabel =correctRadioParent.children();
+      correctRadioLabel.addClass('correct');
       score++;
 
     }else{
-      // find the correct radio button and add class
+      var incorrectRadio = $(this).find('input:checked');
+      var incorrectRadioParent = incorrectRadio.parent();
+      var incorrectRadioLabel = incorrectRadioParent.children();
+      incorrectRadioLabel.addClass('incorrect');
+
       var correctRadio = $(this).find('input[data-correct]');
       var correctRadioParent = correctRadio.parent();
       var correctRadioLabel =correctRadioParent.children();
