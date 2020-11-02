@@ -13,7 +13,6 @@ $(document).ready(function(){
   });
   // on submit clicked
 $('.submit').on('click', function(){
-
     var score = 0;
 
   $('.quiz').each(function(){

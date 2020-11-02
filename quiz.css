@@ -60,6 +60,8 @@ label {
 input[type="radio"]:checked + label {
   color: white;
   background-color: rgb(81, 146, 255);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 
 .home {
