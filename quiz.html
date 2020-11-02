@@ -13,14 +13,21 @@
   <a>Question 1.</a>
   <h1>Which area IS SAFE to swim in</h1>
   <div class="answer-container">
-    <input type="radio" name="answers[1]" id="Q1-1" value="A" >
-    <label for="Q1-1" class="answer">A Rip</label>
+    <div class="result-display">
+      <input type="radio" name="answers[1]" id="Q1-1" class="input-data" value="A" >
+      <label for="Q1-1" class="answer">A Rip</label>
+    </div>
 
-    <input type="radio" name="answers[1]" id="Q1-2" value="B" >
-    <label for="Q1-2">A Rocky area</label>
+    <div class="result-display">
+      <input type="radio" name="answers[1]" id="Q1-2" class="input-data" value="B" >
+      <label for="Q1-2">A Rocky area</label>
+    </div>
 
-    <input type="radio" name="answers[1]" id="Q1-3" value="C" data-correct>
-    <label for="Q1-3">Between the flags</label>
+    <div class="result-display">
+      <input type="radio" name="answers[1]" id="Q1-3" class="input-data" value="C" data-correct>
+      <label for="Q1-3">Between the flags</label>
+    </div>
+
   </div>
 </div>
 
@@ -29,13 +36,13 @@
   <a>Question 2.</a>
   <h1>What is the FIRST thing to do when you get to the BEACH</h1>
    <div class="answer-container">
-       <input type="radio" name="answers[2]" id="Q2-1" value="A" data-correct>
+       <input type="radio" name="answers[2]" id="Q2-1" value="A" class="input-data" data-correct>
        <label for="Q2-1">Put sunscreen on</label>
 
-       <input type="radio" name="answers[2]" id="Q2-2" value="B">
+       <input type="radio" name="answers[2]" id="Q2-2" class="input-data" value="B">
        <label for="Q2-2">Build a sand castle</label>
 
-       <input type="radio" name="answers[2]" id="Q2-3" value="C" >
+       <input type="radio" name="answers[2]" id="Q2-3" class="input-data" value="C" >
        <label for="Q2-3">Go swimming</label>
    </div>
 </div>
@@ -78,10 +85,10 @@
   <h1>What happens if you SWIM in a RIP</h1>
    <div class="answer-container">
        <input type="radio" name="answers[5]" id="Q5-1" value="A">
-       <label for="Q5-1">Nothing</label>
+       <label for="Q5-1" >Nothing</label>
 
        <input type="radio" name="answers[5]" id="Q5-2" value="B" data-correct>
-       <label for="Q5-2">Get pulled out to deep water</label>
+       <label for="Q5-2" >Get pulled out to deep water</label>
 
        <input type="radio" name="answers[5]" id="Q5-3" value="C">
        <label for="Q5-3">Have fun</label>
@@ -89,7 +96,9 @@
 </div>
 
 <!--_______________ END OF QUIZ _______________ -->
-<button href="#finalscore" class="submit"><h1>Submit</h1></button>
+<div class="submit-container">
+  <button href="#finalscore" class="submit"><h1>Submit</h1></button>
+</div>
 
 <div id='finalscore' class="mfp-hide modal-common zoom-anim-dialog">
     Your Score Is:
