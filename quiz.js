@@ -15,21 +15,31 @@ $(document).ready(function(){
 $('.submit').on('click', function(){
     var score = 0;
 
-  $('.answer-container').each(function(){
+  $('.quiz').each(function(){
+
+    // quiz message is removed
+    $('.quiz-msg', this).remove();
 
     var correct = $(this).find(':checked[data-correct]').length;
     console.log(correct);
 
     // check answer
     if( correct == 1 ){
+      // correct!
+      //alert("correct!");
+      var msgHTML = '<div class="correct"></div>';
+      $(this).append(msgHTML);
 
+      // Add 1 to the score
       score++;
 
     }else{
+      var msgHTML = '<div class="quiz-msg incorrect"></div>';
+      $(this).append(msgHTML);
+
       // find the correct radio button and add class
       var correctRadio = $(this).find('input[data-correct]');
-      var correctRadioParent = correctRadio.parent();
-      var correctRadioLabel =correctRadioParent.children();
+      var correctRadioLabel = correctRadio.parent();
       correctRadioLabel.addClass('correct');
 
     }
